@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.larger-text{
+    font-size: 24px;
+}
+.cart-text{
+    font-size: 15px;
+    margin: 10px;
+
+}
+.non-underscore{
+    text-decoration: none;
+}
+.icon-size {
+    font-size: 50px;
+}
+.control{
+    padding: 10 px;
+    margin:10 px;
+}
+.col-lg-5{
+    padding-top: 50px;
+}
+.text-center{
+    font-size: 15px;
+    
+}
+.row {
+    border: none;
+}
+
+.row .col {
+    border: none;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.col {
+    padding: 10px;
+}
+
+.control {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    width: 500px; /* Điều chỉnh theo kích thước mong muốn */
+}
+
+.control input[type="text"],
+.control input[type="tel"],
+.control input[type="email"] {
+    border: 2px solid #009981;
+    border-radius: 5px;
+    padding: 5px;
+    width: 70%;
+    box-sizing: border-box;
+    outline: none;
+}
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+/*cho các option sang 2 bên*/
+.payment-opt {
+    border: 2px solid #009981;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.radio-ctn {
+    display: flex;
+    align-items: center;
+    order:2;
+}
+
+.radio-ctn span {
+    margin-right: 10px;
+}
+
+.cart-paymentTypeId {
+    margin-left: 10px;
+    color:#009981;
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.col {
+    padding: 10px;
+}
+
+
+.control-cbx {
+    cursor: pointer;
+}
+
+.shVAT {
+    display: none;
+}
+
+input[type="checkbox"]:checked~.shVAT {
+    display: block;
+}
+
+.rqVAT {
+    margin-bottom: 10px;
+}
+
+/* Bỏ padding và margin mặc định của các phần tử */
+#SystemCityID,
+#SystemDistrictID,
+#SystemMarketID,
+#MKSystemCityID{
+    border: 2px solid #009981;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+#Address{
+    border: 2px solid #009981;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 8px;
+    width: 100%; /* Điều chỉnh chiều rộng tùy theo nhu cầu */
+    
+}
+
+/*css cho ghi chú*/
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    min-height: 150px; /* Chiều cao tối thiểu của khung ghi chú */
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #009981;
+}
+
+textarea::placeholder {
+    color: #999;
+}
+
+
+/*cho tỉnh/tp, cửa hàng và huyện trên cùng 1 hàng*/
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 1;
+    padding: 5px;
+    
+}
+
+.control {
+    width: 100%;
+    border: none;
+    padding:10px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid #009981;
+    
+}
+/*offer*/
+.offer{
+    border: 0px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.checkmark{
+    color: #009981;
+}
+/*nút xác nhận*/
+.oder-button, .order-next{
+    background: transparent linear-gradient(180deg,#009981 0%,#00483d 100%) 0% 0% no-repeat padding-box;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 6px #00000029;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px 50px;
+}
+.cart-items .item .number .control button {
+    height: 26px;
+    line-height: 26px;
+}
+/*so lương sp*/
+.control button{
+    border: 1px solid #c4c4c4;
+    background: #c4c4c4;
+}
+.number .control input[type="text"]{
+    padding: 0;
+    border: 0;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+}
+
+.edit {
+    text-align: right;
+}
+
+.edit a {
+    display: inline-block;
+}
+
+
+
+.soluong {
+    display: inline-block;
+    border: 0;
+    border-radius: 0px;
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+}
+
+.soluong input[type="number"] {
+    width: 40px;
+    text-align: center;
+}
+.soluong .control {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.soluong .control button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #c4c4c4;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/*cho KM lên trên*/
+.stt {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #e00606;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+}
+.stt {
+        margin-bottom: 0;
+        text-align: left;
+        border: 5px solid #fff;
+    }
+
+    .offer-border {
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+    }
+    .radio-ctn {
+        display: flex;
+        align-items: center;
+    }
+
+    .cart-promote {
+        margin-right: 10px;
+    }
